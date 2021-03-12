@@ -28,7 +28,7 @@
     background-color: lightgrey;
 }
 .goods-item {
-	background-image: linear-gradient(grey, white);
+    background-image: linear-gradient(grey, white);
     width: 150px;
     text-align: center;
     height: 200px;

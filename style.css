@@ -2,40 +2,49 @@
 	padding: 0;
 	margin: 0;
 }
+
 body {
 	background-color: lightgrey;
 }
+
 button, input, textarea {
 	background-image: linear-gradient(grey, white);
 	height: 30px;
 	margin: 5px;
 	padding: 5px;
 	border-radius: 15px;
+	outline: none;
 }
+
 button:hover {
 	background-image: none;
 	background-color: silver;
 }
+
 input, textarea {
 	background-image: none;
 	min-height: 20px;
 	padding: 0 5px;
 }
+
 .header {
 	background-color: lightgrey;
 	margin-bottom: 6px;
 	min-height: 40px;
 	box-shadow: 10px 5px 5px grey;
 }
-.main {
 
+.main {
+	padding: 0 32px;
 }
+
 .goods-list {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 10px;
 }
+
 .goods-item {
     background-image: linear-gradient(grey, white);
     margin: 10px;
@@ -45,6 +54,7 @@ input, textarea {
     border: 1px solid black;
     border-radius: 5px;
 }
+
 .error {
 	border: 1px solid red;
 }
@@ -57,8 +67,18 @@ form {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	margin: 0 auto;
+	max-width: 800px;
 	padding: 50px;
 	border: 1px solid grey;
 	box-shadow: 10px 5px 5px darkgrey;
 	border-radius: 15px;
+}
+
+.bascket-list {
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	border-radius: 15px;
+	border: 2px solid black;
 }

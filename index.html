@@ -8,27 +8,19 @@
 	<body>
 	  <div id="app">
 	    <header class="header">
-	      <input type="text" class="goods-search" v-model="searchLine" />
-	      <button class="search-button" type="button"@click="filterGoods">Искать</button>
-	      <button class="cart-button" type="button" >Корзина</button>
+	     	<h2>Магазин</h2>
+	     	<filter-input v-on:che="filterGoods" v-model="searchLine"></filter-input>
+	    	<bascket-list v-on:remove="removeFromCartHandler" :goods="bascketGoods"></bascket-list>
 	    </header>
 	    <main>
-		  <div class="goods-list">
-		  	<div v-if="filteredGoods.length == 0" class="goods-item">
-		  		<h3>«Нет данных»</h3>
-		  	</div>
-		    <div class="goods-item" v-for="good in filteredGoods">
-		      <h3>{{ good.product_name }}</h3>
-		      <p>{{ good.price }}</p>
-		    </div>
-		  </div>
-		  <div v-if="isVisibleCard" class="bascket-list">
-		  	<h3>В вашей корзине:</h3>
-		  	<div class="bascket" v-for="good in bascketGoods">
-		  	    <h3>{{ good.product_name }}</h3>
-		        <p>{{ good.price }}</p>
-		    </div>
-		  </div>
+	    	<error-handle v-if="isError"></error-handle>
+		 	<goods-list 
+		 		v-if="goods.length !== 0"
+		  		:goods="filteredGoods"
+				v-on:click="addToCartHandler"
+				v-on:add="addToCartHandler"
+			>
+			</goods-list>
 		</main>
 	  </div>
 

@@ -1,4 +1,4 @@
-const API_URL = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
+const API_URL = '/catalogData';
 
 Vue.component('filter-input', {
   props: ['goods'],
@@ -105,6 +105,27 @@ const app = new Vue({
         xhr.send();
       })
     },
+    makePOSTRequest(url, data, callback) {
+      let xhr;
+
+      if (window.XMLHttpRequest) {
+        xhr = new XMLHttpRequest();
+      } else if (window.ActiveXObject) { 
+        xhr = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          callback(xhr.responseText);
+        }
+      }
+
+      xhr.open('POST', url, true);
+      xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+      xhr.send(data);
+    },
+
     filterGoods(e) {
       const regexp = new RegExp(e.target.value, 'i');
       this.filteredGoods = this.goods.filter(good => regexp.test(good.product_name));

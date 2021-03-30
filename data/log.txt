@@ -1,0 +1,23 @@
+
+2021-03-30T18:02:30.531Z: obj: goods; type: add; goodsId: 16
+2021-03-30T18:03:56.529Z: obj: goods; type: add; goodsId: 8
+2021-03-30T18:03:59.983Z: obj: goods; type: add; goodsId: 9
+2021-03-30T18:04:01.506Z: obj: goods; type: add; goodsId: 10
+2021-03-30T18:11:45.079Z: obj: cart; type: update;
+2021-03-30T18:11:46.758Z: obj: cart; type: update;
+2021-03-30T18:12:13.679Z: obj: cart; type: update;
+2021-03-30T18:12:13.868Z: obj: cart; type: update;
+2021-03-30T18:12:14.052Z: obj: cart; type: update;
+2021-03-30T18:12:14.236Z: obj: cart; type: update;
+2021-03-30T18:12:14.388Z: obj: cart; type: update;
+2021-03-30T18:12:14.554Z: obj: cart; type: update;
+2021-03-30T18:12:14.835Z: obj: cart; type: update;
+2021-03-30T18:12:24.447Z: obj: cart; type: update;
+2021-03-30T18:12:24.610Z: obj: cart; type: update;
+2021-03-30T18:12:24.772Z: obj: cart; type: update;
+2021-03-30T18:12:24.924Z: obj: cart; type: update;
+2021-03-30T18:12:25.091Z: obj: cart; type: update;
+2021-03-30T18:12:45.911Z: obj: cart; type: update;
+2021-03-30T18:12:46.358Z: obj: cart; type: update;
+2021-03-30T18:12:46.567Z: obj: cart; type: update;
+2021-03-30T18:12:46.767Z: obj: cart; type: update;

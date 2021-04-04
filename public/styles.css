@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.main {
+  padding: 0 32px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightgrey;
+  margin-bottom: 6px;
+  height: 40px;
+  min-height: 40px;
+  box-shadow: 10px 5px 5px grey;
+}
+
+button,
+input,
+textarea {
+  background-image: linear-gradient(grey, white);
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  outline: none;
+}
+
+button:hover {
+  background-image: none;
+  background-color: silver;
+}
+
+input,
+textarea {
+  background-image: none;
+  min-height: 20px;
+  padding: 0 5px;
+}
+
+.cartPopup {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  min-width: 200px;
+}
+
+.cartItemsTable {
+  width: 500px;
+  border-collapse: collapse;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+.cartItemsTable td {
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+}
+
+.cartTableHeader {
+  background: #dddd;
+  text-align: center;
+}
+
+.actionButtonsHolder {
+  display: flex;
+  justify-content: center;
+}
+
+.actionButtonsHolder button {
+  width: 30%;
+}
+
+.goods-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: lightgrey;
+}
+
+.goods-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: linear-gradient(grey, white);
+  background-image: linear-gradient(grey, white);
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.good-item-img {
+  margin: 0 auto;
+  width: 90%;
+  height: 50px;
+  background-color: lightgrey;
+  margin-bottom: 10px;
+}
+
+.good-item-title,
+.good-item-price,
+.good-item-stock {
+  padding: 5px;
+}
